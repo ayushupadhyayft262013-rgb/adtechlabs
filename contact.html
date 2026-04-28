@@ -103,21 +103,35 @@
 <body class="flex flex-col min-h-screen">
 <!-- TopAppBar Section -->
 <header class="sticky top-0 w-full z-50 bg-[#F6F6F6]/80 dark:bg-[#1A1A1A]/80 backdrop-blur-md shadow-[0_10px_40px_rgba(45,47,47,0.06)]">
-<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-<div class="text-2xl font-black text-[#AC2C00] tracking-tighter">adtechlabs</div>
+<div class="flex justify-between items-center w-full px-4 sm:px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl sm:text-2xl font-black text-[#AC2C00] tracking-tighter">adtechlabs</div>
 <nav class="hidden md:flex items-center gap-8">
 <a class="text-[#2D2F2F] dark:text-[#F6F6F6] font-medium hover:text-[#AC2C00] dark:hover:text-[#FF7852] transition-all duration-300" href="/">Home</a>
 <a class="text-[#2D2F2F] dark:text-[#F6F6F6] font-medium hover:text-[#AC2C00] dark:hover:text-[#FF7852] transition-all duration-300" href="/about.html">About</a>
 <a class="text-[#AC2C00] dark:text-[#FF7852] font-bold border-b-2 border-[#AC2C00] pb-1 hover:text-[#AC2C00] dark:hover:text-[#FF7852] transition-all duration-300" href="/contact.html">Contact</a>
 </nav>
-<a href="/contact.html" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-semibold scale-95 active:opacity-80 transition-transform inline-block">
+<div class="flex items-center gap-3">
+<a href="/contact.html" class="hidden sm:inline-block bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-semibold scale-95 active:opacity-80 transition-transform">
                 Get Started
             </a>
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-stone-200 transition-colors" aria-label="Open menu">
+<span class="material-symbols-outlined text-[#2D2F2F]">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden bg-white/95 backdrop-blur-xl border-t border-stone-200">
+<div class="flex flex-col px-6 py-4 gap-1">
+<a class="py-3 px-4 rounded-lg text-[#AC2C00] font-bold text-base" href="/">Home</a>
+<a class="py-3 px-4 rounded-lg text-[#2D2F2F] font-medium text-base hover:bg-stone-100 transition-colors" href="/about.html">About</a>
+<a class="py-3 px-4 rounded-lg text-[#2D2F2F] font-medium text-base hover:bg-stone-100 transition-colors" href="/contact.html">Contact</a>
+<a href="/contact.html" class="mt-2 bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-3 rounded-xl font-bold text-center shadow-lg sm:hidden">Get Started</a>
+</div>
 </div>
 </header>
 <main class="flex-grow">
 <!-- Hero & Breadcrumb Section -->
-<section class="relative py-20 px-6">
+<section class="relative py-12 sm:py-20 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto">
 <nav class="mb-6 flex items-center gap-2 text-on-surface-variant font-label text-sm uppercase tracking-widest">
 <span>Home</span>
@@ -126,10 +140,10 @@
 </nav>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
 <div class="lg:col-span-7">
-<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 text-on-surface anim-hero-title">
+<h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-4 text-on-surface anim-hero-title">
                             Contact Us
                         </h1>
-<p class="text-xl md:text-2xl text-on-surface-variant font-medium anim-hero-subtitle">
+<p class="text-lg sm:text-xl md:text-2xl text-on-surface-variant font-medium anim-hero-subtitle">
                             Want to Grow Your Business? Contact Us
                         </p>
 </div>
@@ -140,7 +154,7 @@
 </div>
 </section>
 <!-- Contact Cards Section -->
-<section class="py-12 px-6 bg-surface-container-low">
+<section class="py-8 sm:py-12 px-4 sm:px-6 bg-surface-container-low">
 <div class="max-w-7xl mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <!-- Address Card -->
@@ -171,7 +185,7 @@
 </div>
 </section>
 <!-- Map Section -->
-<section class="py-20 px-6">
+<section class="py-12 sm:py-20 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto">
 <div class="rounded-2xl overflow-hidden shadow-xl h-[500px] relative anim-scale-in">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59064.01!2d82.64!3d22.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280b03b0952415%3A0xe69b1d47e4983aa8!2sKorba%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" class="w-full h-full border-none" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ADTECHLABS Location - Korba, Chhattisgarh"></iframe>
@@ -179,12 +193,12 @@
 </div>
 </section>
 <!-- Contact Form Section (Bento Grid Style) -->
-<section class="py-20 px-6 bg-surface">
+<section class="py-12 sm:py-20 px-4 sm:px-6 bg-surface">
 <div class="max-w-7xl mx-auto">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-<div class="lg:col-span-4 bg-primary p-10 rounded-2xl text-on-primary flex flex-col justify-between anim-fade-left">
+<div class="lg:col-span-4 bg-primary p-6 sm:p-10 rounded-2xl text-on-primary flex flex-col justify-between anim-fade-left">
 <div>
-<h2 class="text-3xl font-bold mb-6">Send us a message</h2>
+<h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Send us a message</h2>
 <p class="opacity-90 leading-relaxed mb-8">Have a specific project in mind? Fill out the form and our AI strategy team will get back to you within 24 hours.</p>
 </div>
 <div class="space-y-4">
@@ -198,7 +212,7 @@
 </div>
 </div>
 </div>
-<div class="lg:col-span-8 bg-surface-container-lowest p-10 rounded-2xl shadow-sm anim-fade-right anim-delay-2">
+<div class="lg:col-span-8 bg-surface-container-lowest p-6 sm:p-10 rounded-2xl shadow-sm anim-fade-right anim-delay-2">
 <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
 <label class="text-xs font-bold uppercase tracking-wider text-outline">Full Name</label>
@@ -244,4 +258,15 @@
 </div>
 </footer>
 <script src="/js/animations.js"></script>
+<script>
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    menuBtn.querySelector('.material-symbols-outlined').textContent = isOpen ? 'menu' : 'close';
+  });
+}
+</script>
 </body></html>
