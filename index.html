@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>adtechlabs | AI Avatar Content Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="/css/animations.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#9c9d9d",
+                    "on-primary-fixed-variant": "#581200",
+                    "on-error-container": "#570008",
+                    "secondary": "#5c5b5b",
+                    "on-tertiary-container": "#570f70",
+                    "on-error": "#ffefee",
+                    "primary": "#ac2c00",
+                    "secondary-dim": "#504f4f",
+                    "on-primary": "#ffefec",
+                    "outline-variant": "#acadad",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "inverse-surface": "#0c0f0f",
+                    "tertiary-fixed-dim": "#d78cef",
+                    "on-tertiary-fixed-variant": "#611b79",
+                    "background": "#f6f6f6",
+                    "primary-container": "#ff7852",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface-dim": "#d3d5d5",
+                    "tertiary-container": "#e699fd",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#f5f2f1",
+                    "on-surface": "#2d2f2f",
+                    "primary-fixed": "#ff7852",
+                    "error-container": "#fb5151",
+                    "on-surface-variant": "#5a5c5c",
+                    "surface-container-highest": "#dbdddd",
+                    "tertiary-fixed": "#e699fd",
+                    "surface-container-high": "#e1e3e3",
+                    "tertiary-dim": "#75318d",
+                    "on-tertiary": "#ffedfe",
+                    "outline": "#767777",
+                    "on-primary-container": "#480d00",
+                    "error": "#b31b25",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary-fixed": "#360049",
+                    "on-secondary-fixed": "#403f3f",
+                    "inverse-primary": "#ff5623",
+                    "secondary-container": "#e5e2e1",
+                    "surface-tint": "#ac2c00",
+                    "surface-container": "#e7e8e8",
+                    "primary-dim": "#972600",
+                    "surface": "#f6f6f6",
+                    "primary-fixed-dim": "#ff5d2d",
+                    "on-secondary-container": "#525151",
+                    "surface-container-low": "#f0f1f1",
+                    "surface-bright": "#f6f6f6",
+                    "surface-variant": "#dbdddd",
+                    "error-dim": "#9f0519",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "tertiary": "#823e9b",
+                    "on-background": "#2d2f2f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #f6f6f6;
+        color: #2d2f2f;
+      }
+      h1, h2, h3, .font-headline {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md shadow-[0_10px_40px_rgba(45,47,47,0.06)]">
+<nav class="flex justify-between items-center px-8 py-5 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50">adtechlabs</div>
+<div class="hidden md:flex gap-8 items-center font-['Plus_Jakarta_Sans'] text-sm tracking-tight">
+<a class="text-orange-700 dark:text-orange-500 font-bold border-b-2 border-orange-700 pb-1" href="/">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors" href="/about.html">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors" href="/contact.html">Contact</a>
+</div>
+<a href="/contact.html" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-3 rounded-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-lg inline-block">
+                Get Started
+            </a>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center pt-20 pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8 z-10">
+<span class="inline-block px-4 py-1.5 bg-tertiary-container/30 text-tertiary font-bold text-xs tracking-widest uppercase rounded-full anim-hero-badge anim-pulse-glow">
+                        Next-Gen Content Production
+                    </span>
+<h1 class="text-5xl lg:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] anim-hero-title">
+                        Scalable Short-Form Videos with an <span class="text-primary italic anim-shimmer">AI Avatar</span> Content Agency
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed anim-hero-subtitle">
+                        Without daily recording, we generate consistent short-form video content and lifelike AI avatars for professionals and enterprises.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4 anim-hero-buttons">
+<a href="/book.html" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-5 rounded-xl text-lg font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform anim-ripple anim-pulse-glow inline-block">
+                            Book Your Strategy Call – Just ₹49
+                        </a>
+<button class="bg-surface-container-highest text-on-surface px-8 py-5 rounded-xl text-lg font-bold hover:bg-surface-container-high transition-colors">
+                            View Portfolio
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative z-20 group anim-hero-image">
+<img alt="AI Avatar Technology" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Modern high-tech AI digital avatar display on a futuristic screen with professional soft lighting and orange highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDURz3kd1W1j3lqvedoyzAXTbsu_Bd6ZqVJZyA4urFibJJGizBYV8kFz7Fm5EUwVGC_BmU73aU5SvYtXZQeBrgXxAKZaJVSudNKc5t7nAoSyoIE5c9HiqeXjtj6MHHf91D3eFqL47GP3Dnx8KEHTw53vbxBYKhgB9OIkobrUUbW9_HzBckQM2KcefJZvS8IdWeeDmFRp4ZUMb7dWOrTknyBCLouXLgoNmcS4-HROQQB3gaE_5ta3n2JkG4lLVnXaarTb1NFjVVVPwA2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-0 anim-float" data-parallax="0.05"></div>
+<div class="absolute -bottom-12 -left-12 w-80 h-80 bg-tertiary/10 rounded-full blur-3xl -z-0 anim-float-reverse" data-parallax="-0.08"></div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-extrabold tracking-tight mb-4" data-text-reveal>Our Premium Services</h2>
+<p class="text-on-surface-variant text-lg">Harness the power of AI to dominate social feeds and scale your digital presence.</p>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-l-4 border-primary shadow-sm hover:translate-y-[-8px] transition-all duration-300 anim-fade-up anim-delay-1 anim-shine anim-hover-tilt">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="smart_toy">smart_toy</span>
+<h3 class="text-xl font-bold mb-4">AI Avatar Service</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Create a digital twin that speaks your script perfectly, eliminating the need for cameras and microphones.
+                        </p>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-l-4 border-primary shadow-sm hover:translate-y-[-8px] transition-all duration-300 anim-fade-up anim-delay-2 anim-shine anim-hover-tilt">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="ads_click">ads_click</span>
+<h3 class="text-xl font-bold mb-4">Meta Ads</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            High-converting ad sets utilizing AI-generated creatives optimized for Facebook and Instagram algorithms.
+                        </p>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-l-4 border-primary shadow-sm hover:translate-y-[-8px] transition-all duration-300 anim-fade-up anim-delay-3 anim-shine anim-hover-tilt">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="hub">hub</span>
+<h3 class="text-xl font-bold mb-4">Client Acquisition</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            A complete system to turn viewers into high-ticket clients through automated funnels and AI nurturing.
+                        </p>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-l-4 border-primary shadow-sm hover:translate-y-[-8px] transition-all duration-300 anim-fade-up anim-delay-4 anim-shine anim-hover-tilt">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="video_chat">video_chat</span>
+<h3 class="text-xl font-bold mb-4">UGC Ads</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            User-generated style content that feels organic but is hyper-targeted for maximum engagement and trust.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-extrabold tracking-tight mb-4" data-text-reveal>The Kinetic Workflow</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">From setup to scale in three seamless stages.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-16 relative">
+<!-- Progress Line -->
+<div class="hidden lg:block absolute top-10 left-[10%] right-[10%] h-px bg-surface-container-highest"></div>
+<div class="relative text-center space-y-6 anim-fade-up anim-delay-1">
+<div class="w-20 h-20 bg-primary text-on-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto relative z-10 shadow-lg shadow-primary/20 anim-hover-bounce">1</div>
+<h3 class="text-2xl font-bold">Configuring an AI Avatar</h3>
+<p class="text-on-surface-variant px-4">We capture your likeness and voice to build a high-fidelity digital twin that mirrors your persona.</p>
+</div>
+<div class="relative text-center space-y-6 anim-fade-up anim-delay-2">
+<div class="w-20 h-20 bg-primary text-on-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto relative z-10 shadow-lg shadow-primary/20 anim-hover-bounce">2</div>
+<h3 class="text-2xl font-bold">Content Development</h3>
+<p class="text-on-surface-variant px-4">Our editorial team drafts scripts that resonate, which are then rendered by your AI avatar instantly.</p>
+</div>
+<div class="relative text-center space-y-6 anim-fade-up anim-delay-3">
+<div class="w-20 h-20 bg-primary text-on-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto relative z-10 shadow-lg shadow-primary/20 anim-hover-bounce">3</div>
+<h3 class="text-2xl font-bold">Growth &amp; Scale</h3>
+<p class="text-on-surface-variant px-4">Daily distributions across all platforms to drive massive awareness and consistent lead generation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section - Bento Grid Style -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-extrabold tracking-tight mb-16 text-center" data-text-reveal>Why Industry Leaders Choose Us</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- B1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl space-y-4 hover:bg-white transition-colors anim-flip-up anim-delay-1 anim-shine">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="trending_up">trending_up</span>
+<h4 class="font-bold text-lg">Designed for Actual Business Outcomes</h4>
+<p class="text-on-surface-variant text-sm">We don't just chase views; we build systems that generate tangible ROI and qualified leads.</p>
+</div>
+<!-- B2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl space-y-4 hover:bg-white transition-colors anim-flip-up anim-delay-2 anim-shine">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="verified">verified</span>
+<h4 class="font-bold text-lg">Trusted by Businesses</h4>
+<p class="text-on-surface-variant text-sm">Join a community of forward-thinking founders and professionals who have moved past manual recording.</p>
+</div>
+<!-- B3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl space-y-4 hover:bg-white transition-colors anim-flip-up anim-delay-3 anim-shine">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="new_releases">new_releases</span>
+<h4 class="font-bold text-lg">Relevant Content</h4>
+<p class="text-on-surface-variant text-sm">Our AI systems scan trends in real-time to ensure your content is always at the forefront of the conversation.</p>
+</div>
+<!-- B4 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl space-y-4 hover:bg-white transition-colors anim-flip-up anim-delay-4 anim-shine">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="tune">tune</span>
+<h4 class="font-bold text-lg">Easy Configuration</h4>
+<p class="text-on-surface-variant text-sm">Zero technical knowledge required. We handle the complexity of the AI stack while you focus on strategy.</p>
+</div>
+<!-- B5 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl space-y-4 hover:bg-white transition-colors anim-flip-up anim-delay-5 anim-shine">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="history">history</span>
+<h4 class="font-bold text-lg">Designed to Last</h4>
+<p class="text-on-surface-variant text-sm">Build an asset that grows in value. Your digital twin stays evergreen and improves with every update.</p>
+</div>
+<!-- B6 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl space-y-4 hover:bg-white transition-colors anim-flip-up anim-delay-6 anim-shine">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="support_agent">support_agent</span>
+<h4 class="font-bold text-lg">Dependable Human Assistance</h4>
+<p class="text-on-surface-variant text-sm">AI-driven efficiency backed by a dedicated team of content strategists and support specialists.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-24">
+<div class="max-w-4xl mx-auto px-8">
+<h2 class="text-4xl font-extrabold tracking-tight mb-12 text-center" data-text-reveal>Frequently Asked Questions</h2>
+<div class="space-y-4">
+<!-- Q1 -->
+<details class="group bg-surface-container-low rounded-xl overflow-hidden" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-lg group-open:bg-surface-container-high transition-colors">
+                            How realistic are the AI avatars?
+                            <span class="material-symbols-outlined text-primary group-open:rotate-45 transition-transform" data-icon="add">add</span>
+</summary>
+<div class="p-6 text-on-surface-variant leading-relaxed bg-surface-container-low border-t border-outline-variant/10">
+                            Our AI avatars are indistinguishable from real video. We use high-fidelity synthesis that captures micro-expressions, lip-syncing, and natural head movements to ensure absolute authenticity.
+                        </div>
+</details>
+<!-- Q2 -->
+<details class="group bg-surface-container-low rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-lg group-open:bg-surface-container-high transition-colors">
+                            Do I need any special equipment?
+                            <span class="material-symbols-outlined text-primary group-open:rotate-45 transition-transform" data-icon="add">add</span>
+</summary>
+<div class="p-6 text-on-surface-variant leading-relaxed bg-surface-container-low border-t border-outline-variant/10">
+                            None at all. Once we complete the initial 2-minute recording for your avatar, you never need to touch a camera again. We handle all rendering and production in-house.
+                        </div>
+</details>
+<!-- Q3 -->
+<details class="group bg-surface-container-low rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-lg group-open:bg-surface-container-high transition-colors">
+                            How many videos can you produce?
+                            <span class="material-symbols-outlined text-primary group-open:rotate-45 transition-transform" data-icon="add">add</span>
+</summary>
+<div class="p-6 text-on-surface-variant leading-relaxed bg-surface-container-low border-t border-outline-variant/10">
+                            Our standard plans range from 15 to 30 videos per month, but our enterprise solutions can scale to hundreds of personalized variations for different audience segments.
+                        </div>
+</details>
+<!-- Q4 -->
+<details class="group bg-surface-container-low rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-lg group-open:bg-surface-container-high transition-colors">
+                            Is the voice cloned too?
+                            <span class="material-symbols-outlined text-primary group-open:rotate-45 transition-transform" data-icon="add">add</span>
+</summary>
+<div class="p-6 text-on-surface-variant leading-relaxed bg-surface-container-low border-t border-outline-variant/10">
+                            Yes, we create a high-fidelity voice clone that captures your unique pitch, tone, and inflection, allowing your digital twin to sound exactly like you.
+                        </div>
+</details>
+<!-- Q5 -->
+<details class="group bg-surface-container-low rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-lg group-open:bg-surface-container-high transition-colors">
+                            Can I use these for ads?
+                            <span class="material-symbols-outlined text-primary group-open:rotate-45 transition-transform" data-icon="add">add</span>
+</summary>
+<div class="p-6 text-on-surface-variant leading-relaxed bg-surface-container-low border-t border-outline-variant/10">
+                            Absolutely. Many of our clients see significantly higher ROAS using AI avatars because they can test dozens of hook variations effortlessly without extra filming costs.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="relative bg-gradient-to-br from-primary to-primary-container p-12 lg:p-20 rounded-[2rem] overflow-hidden text-center anim-scale-in anim-gradient-bg">
+<div class="relative z-10 space-y-8 max-w-3xl mx-auto">
+<h2 class="text-4xl lg:text-6xl font-black text-on-primary tracking-tighter">Ready to Automate Your Digital Presence?</h2>
+<p class="text-xl text-on-primary/90 font-medium">Join adtechlabs today and start producing world-class content at the speed of thought.</p>
+<a href="/book.html" class="bg-on-primary text-primary px-10 py-5 rounded-xl text-xl font-bold shadow-2xl hover:bg-surface transition-colors anim-magnetic anim-ripple anim-pulse-glow inline-block">
+                        Book Your Strategy Call – Just ₹49
+                    </a>
+</div>
+<!-- Decorative background patterns -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48 blur-3xl anim-float-slow"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full -ml-48 -mb-48 blur-3xl anim-float-reverse"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-900 dark:bg-black w-full pt-20 pb-10 text-stone-400 font-['Manrope'] text-sm leading-relaxed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold tracking-tight text-white">adtechlabs</div>
+<p class="opacity-80">The Kinetic Curator. Leading the charge in high-fidelity AI avatar content for the modern professional.</p>
+<div class="flex gap-4">
+<a class="opacity-80 hover:opacity-100 hover:text-orange-500 transition-all" href="#">Instagram</a>
+<a class="opacity-80 hover:opacity-100 hover:text-orange-500 transition-all" href="#">Facebook</a>
+<a class="opacity-80 hover:opacity-100 hover:text-orange-500 transition-all" href="#">YouTube</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs">Services</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-white hover:translate-x-1 transition-all inline-block" href="#">AI Avatar Creation</a></li>
+<li><a class="hover:text-white hover:translate-x-1 transition-all inline-block" href="#">Short Form Editing</a></li>
+<li><a class="hover:text-white hover:translate-x-1 transition-all inline-block" href="#">Ad Strategy</a></li>
+<li><a class="hover:text-white hover:translate-x-1 transition-all inline-block" href="#">Funnel Optimization</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs">Agency</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-white hover:translate-x-1 transition-all inline-block" href="#">Our Work</a></li>
+<li><a class="hover:text-white hover:translate-x-1 transition-all inline-block" href="#">Contact Us</a></li>
+<li><a class="hover:text-white hover:translate-x-1 transition-all inline-block" href="#">Case Studies</a></li>
+<li><a class="hover:text-white hover:translate-x-1 transition-all inline-block" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs">Newsletter</h4>
+<p class="text-xs opacity-70">Get the latest AI content trends directly to your inbox.</p>
+<div class="flex gap-2">
+<input class="bg-white/5 border-none rounded-lg px-4 py-2 w-full text-white placeholder:text-stone-600 focus:ring-1 focus:ring-primary transition-all" placeholder="Email address" type="email"/>
+<button class="bg-primary text-white p-2 rounded-lg hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-10 border-t border-white/5 text-center px-8">
+<p class="opacity-50">© 2025 adtechlabs. All rights reserved.</p>
+</div>
+</footer>
+<script src="/js/animations.js"></script>
+</body></html>

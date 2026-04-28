@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | adtechlabs - The Kinetic Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="/css/animations.css" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#fb5151",
+                      "on-background": "#2d2f2f",
+                      "on-surface-variant": "#5a5c5c",
+                      "tertiary-dim": "#75318d",
+                      "on-tertiary-container": "#570f70",
+                      "secondary-fixed-dim": "#d6d4d3",
+                      "error-dim": "#9f0519",
+                      "on-surface": "#2d2f2f",
+                      "on-secondary-fixed-variant": "#5c5b5b",
+                      "surface-variant": "#dbdddd",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-container": "#ff7852",
+                      "outline": "#767777",
+                      "surface-container-high": "#e1e3e3",
+                      "surface-container-low": "#f0f1f1",
+                      "secondary": "#5c5b5b",
+                      "primary-fixed": "#ff7852",
+                      "primary-fixed-dim": "#ff5d2d",
+                      "secondary-dim": "#504f4f",
+                      "primary-dim": "#972600",
+                      "surface-container-highest": "#dbdddd",
+                      "tertiary": "#823e9b",
+                      "on-tertiary": "#ffedfe",
+                      "surface-tint": "#ac2c00",
+                      "surface-container": "#e7e8e8",
+                      "primary": "#ac2c00",
+                      "outline-variant": "#acadad",
+                      "on-primary-fixed": "#000000",
+                      "surface-bright": "#f6f6f6",
+                      "on-tertiary-fixed-variant": "#611b79",
+                      "error": "#b31b25",
+                      "background": "#f6f6f6",
+                      "surface": "#f6f6f6",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-secondary-fixed": "#403f3f",
+                      "on-primary": "#ffefec",
+                      "surface-dim": "#d3d5d5",
+                      "on-secondary-container": "#525151",
+                      "tertiary-container": "#e699fd",
+                      "on-secondary": "#f5f2f1",
+                      "on-error": "#ffefee",
+                      "tertiary-fixed-dim": "#d78cef",
+                      "on-error-container": "#570008",
+                      "on-primary-container": "#480d00",
+                      "tertiary-fixed": "#e699fd",
+                      "inverse-surface": "#0c0f0f",
+                      "inverse-primary": "#ff5623",
+                      "inverse-on-surface": "#9c9d9d",
+                      "secondary-container": "#e5e2e1",
+                      "on-tertiary-fixed": "#360049",
+                      "on-primary-fixed-variant": "#581200"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "display": ["Plus Jakarta Sans"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f6f6f6; color: #2d2f2f; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-xl no-border shadow-[0_10px_40px_rgba(45,47,47,0.06)] shadow-xl dark:shadow-none">
+<nav class="flex justify-between items-center px-8 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-neutral-900 dark:text-white">
+                adtechlabs
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-neutral-600 dark:text-neutral-400 font-medium hover:text-neutral-900 dark:hover:text-white hover:opacity-80 transition-all duration-300" href="/">Home</a>
+<a class="text-[#AC2C00] dark:text-[#FF7852] font-bold border-b-2 border-[#AC2C00] pb-1 hover:opacity-80 transition-all duration-300" href="/about.html">About</a>
+<a class="text-neutral-600 dark:text-neutral-400 font-medium hover:text-neutral-900 dark:hover:text-white hover:opacity-80 transition-all duration-300" href="/contact.html">Contact</a>
+</div>
+<a href="/contact.html" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-xl font-bold scale-95 active:scale-90 transition-transform inline-block">
+                Get Started
+            </a>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero/Page Header -->
+<section class="bg-[#FAFAFA] py-20 px-8">
+<div class="max-w-screen-xl mx-auto">
+<nav class="flex items-center gap-2 mb-6 text-sm font-label uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="/">Home</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-on-surface font-semibold">About</span>
+</nav>
+<h1 class="text-6xl md:text-[3.5rem] font-display font-black tracking-tighter text-on-surface mb-4 anim-hero-title">
+                    About
+                </h1>
+<div class="w-24 h-1.5 bg-primary rounded-full anim-hero-subtitle" style="transform-origin:left"></div>
+</div>
+</section>
+<!-- Mission Section -->
+<section class="py-32 px-8 overflow-hidden bg-surface">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<span class="label-md font-label uppercase tracking-[0.15em] text-primary font-bold mb-4 block anim-fade-up">Our Purpose</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold leading-tight text-on-surface mb-8" data-text-reveal>
+                        Your Partner in Growth
+                    </h2>
+<p class="text-lg md:text-xl font-body leading-relaxed text-on-surface-variant max-w-2xl mb-10 anim-fade-up anim-delay-2">
+                        At ADTECHLABS, we help businesses grow &amp; scale by delivering high-quality leads through smart and effective Meta ad campaigns. Our focus is on driving measurable results to take your business to new heights.
+                    </p>
+<div class="flex gap-4">
+<div class="p-1 bg-surface-container-low rounded-xl">
+<img class="rounded-lg object-cover w-full h-80 grayscale hover:grayscale-0 transition-all duration-700 anim-scale-in" data-alt="Close-up shot of high-end digital interface showing data streams and AI neural network connections in warm orange and dark gray tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvuBSLHuJBq84I-MQaqSVnefz_5NWHafXMxjSYnS-RlBbWbPu6YPG79W_Mvn_oxjEIeRPk9mdr5VQVGBkbSK-HXHOnrn3-4N1EU83SRctmyLm7WfVlU94W46n5tMrZ-e5pQQBoRJLfjpO7fmxqSd4dyjeRDSN1WBPfsdnH4YIRk2jNLR0pUghFexRbR67rsKMCEkOouDjz7puul4AQhSRzECffoo7UMZ-JN-16sQHAJx65pCCfD6sjM2G9jTERb-u3gVDTB9BUlkuG"/>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-container-low rounded-full absolute -top-20 -right-20 w-64 h-64 blur-3xl opacity-50 anim-float"></div>
+<div class="relative z-10 border-l-4 border-primary p-12 bg-surface-container-lowest shadow-[0_10px_40px_rgba(45,47,47,0.06)] rounded-r-xl anim-fade-right anim-delay-3 anim-shine">
+<span class="material-symbols-outlined text-primary text-5xl mb-6" data-weight="fill">hub</span>
+<h3 class="text-2xl font-bold mb-4">AI-Driven Evolution</h3>
+<p class="text-on-surface-variant">We bridge the gap between high-level AI avatar technology and performance marketing, creating a new standard for digital engagement.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-screen-xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Stat Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border-l-4 border-[#EE4710] shadow-[0_10px_40px_rgba(45,47,47,0.04)] hover:transform hover:-translate-y-2 transition-all duration-300 anim-fade-up anim-delay-1 anim-shine">
+<span class="text-5xl md:text-6xl font-display font-extrabold text-[#EE4710] block mb-4" data-count-to="50" data-count-suffix="+">0+</span>
+<p class="text-on-surface-variant font-label uppercase tracking-widest font-bold">Happy Clients</p>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border-l-4 border-[#EE4710] shadow-[0_10px_40px_rgba(45,47,47,0.04)] hover:transform hover:-translate-y-2 transition-all duration-300 anim-fade-up anim-delay-2 anim-shine">
+<span class="text-5xl md:text-6xl font-display font-extrabold text-[#EE4710] block mb-4" data-count-to="145" data-count-suffix="+">0+</span>
+<p class="text-on-surface-variant font-label uppercase tracking-widest font-bold">Projects Completed</p>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border-l-4 border-[#EE4710] shadow-[0_10px_40px_rgba(45,47,47,0.04)] hover:transform hover:-translate-y-2 transition-all duration-300 anim-fade-up anim-delay-3 anim-shine">
+<span class="text-5xl md:text-6xl font-display font-extrabold text-[#EE4710] block mb-4" data-count-to="98" data-count-suffix="%">0%</span>
+<p class="text-on-surface-variant font-label uppercase tracking-widest font-bold">Client Satisfaction</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="py-20 px-8">
+<div class="max-w-screen-xl mx-auto rounded-[2rem] overflow-hidden bg-gradient-to-br from-primary to-primary-container p-12 md:p-20 relative anim-scale-in anim-gradient-bg">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Abstract kinetic wave pattern with fluid lines and digital artifacts on a transparent background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANQQo97HuMx8z19wvYB-szlvcZkCPWG7ZzAHpVWYYyD89Z9W6APMwZIUBQ-0Y67XCyGNRdXylWmzuxjS68zOjTIF7uTZheSgr_YjCqfIkLSQOnTAYDeIniFJjrUUtVFBGkRqbieCEmy_5xHaoFy1TbHgaNvIJW0FKBQzFZc6YwXajDe8Bs3JpEYn4EIuh9rQuRYmKRB8W_vGxXenqrDsbCTHOMIs1iYdovPDHQ0xec2JESi9cTdcpK_OYxs5cRKnyloNqnAnzHUlJ3"/>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="text-4xl md:text-6xl font-display font-black text-on-primary leading-tight mb-8" data-text-reveal>
+                        Ready to scale your digital presence?
+                    </h2>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-white text-primary px-10 py-5 rounded-xl font-black text-lg hover:bg-neutral-100 transition-colors shadow-lg anim-magnetic anim-ripple anim-pulse-glow">
+                            Work With Us
+                        </button>
+<button class="flex items-center gap-3 text-on-primary font-bold hover:gap-5 transition-all text-lg">
+                            Explore Services <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 dark:bg-black text-white py-20 px-12">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-white mb-4">adtechlabs</div>
+<p class="font-manrope text-sm tracking-tight text-neutral-400 max-w-xs leading-relaxed">
+                    Elevating brands through AI-powered content and kinetic strategy. The future of creative agency work is here.
+                </p>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-primary font-bold mb-6 font-label uppercase tracking-widest text-xs">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-neutral-500 hover:text-[#FF7852] transition-colors text-sm font-medium" href="/">Home</a></li>
+<li><a class="text-white font-semibold text-sm" href="/about.html">About</a></li>
+<li><a class="text-neutral-500 hover:text-[#FF7852] transition-colors text-sm font-medium" href="/contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-primary font-bold mb-6 font-label uppercase tracking-widest text-xs">Follow Us</h4>
+<div class="flex flex-col gap-4">
+<a class="text-neutral-500 hover:text-white transition-colors flex items-center gap-2 text-sm" href="#">
+                        LinkedIn
+                    </a>
+<a class="text-neutral-500 hover:text-white transition-colors flex items-center gap-2 text-sm" href="#">
+                        Instagram
+                    </a>
+<a class="text-neutral-500 hover:text-white transition-colors flex items-center gap-2 text-sm" href="#">
+                        Youtube
+                    </a>
+</div>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-primary font-bold mb-6 font-label uppercase tracking-widest text-xs">Legal</h4>
+<div class="flex flex-col gap-4">
+<a class="text-neutral-500 hover:text-white transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="text-neutral-500 hover:text-white transition-colors text-sm" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:row items-center justify-between gap-6">
+<p class="font-manrope text-xs tracking-tight text-neutral-400">
+                © 2025 adtechlabs. All rights reserved.
+            </p>
+<div class="flex gap-8">
+<span class="text-[10px] uppercase tracking-[0.2em] text-neutral-600">Built for Excellence</span>
+<span class="text-[10px] uppercase tracking-[0.2em] text-neutral-600">AI Verified</span>
+</div>
+</div>
+</footer>
+<script src="/js/animations.js"></script>
+</body></html>
