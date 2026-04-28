@@ -105,22 +105,9 @@
 <a href="/contact.html" class="hidden sm:inline-block bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold scale-95 active:scale-90 transition-transform shadow-lg">
                 Get Started
             </a>
-<button id="mobile-menu-btn" class="md:hidden relative z-50 flex items-center justify-center w-12 h-12 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white shadow-sm hover:scale-105 transition-all" aria-label="Toggle menu">
-<span class="material-symbols-outlined text-[28px] pointer-events-none transition-transform duration-300" id="menu-icon">menu</span>
-</button>
 </div>
 </nav>
-<!-- Premium Fullscreen Mobile Menu -->
-<div id="mobile-menu" class="fixed inset-0 z-40 hidden flex-col bg-white/95 dark:bg-neutral-950/95 backdrop-blur-3xl pt-24 px-6 pb-8 transition-opacity duration-300 opacity-0">
-<div class="flex flex-col gap-6 h-full justify-center text-center">
-<a class="text-4xl font-black text-neutral-800 dark:text-neutral-200 tracking-tighter hover:scale-105 transition-transform" href="/">Home</a>
-<a class="text-4xl font-black text-[#AC2C00] dark:text-[#FF7852] tracking-tighter hover:scale-105 transition-transform" href="/about.html">About</a>
-<a class="text-4xl font-black text-neutral-800 dark:text-neutral-200 tracking-tighter hover:scale-105 transition-transform" href="/contact.html">Contact</a>
-<div class="mt-8 pt-8 border-t border-neutral-200 dark:border-neutral-800 w-full flex justify-center">
-<a href="/contact.html" class="bg-gradient-to-br from-primary to-primary-container text-on-primary w-full max-w-sm px-8 py-5 rounded-2xl text-xl font-black text-center shadow-2xl shadow-primary/30">Get Started Now</a>
-</div>
-</div>
-</div>
+<!-- Mobile menu overlay removed for native app bottom nav -->
 </header>
 <main class="pt-24">
 <!-- Hero/Page Header -->
@@ -257,41 +244,31 @@
 </div>
 </div>
 </footer>
+
+<!-- Native App Bottom Navigation -->
+<div class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-[#141414]/90 backdrop-blur-3xl border-t border-white/5 pb-1 pt-1">
+    <div class="flex justify-around items-center h-[60px] px-2">
+        <a href="/" class="flex flex-col items-center justify-center w-full h-full text-[#888888] hover:text-[#e5e5e5] transition-colors">
+            <span class="material-symbols-outlined text-[24px] mb-0.5">home</span>
+            <span class="text-[10px] font-bold">Home</span>
+        </a>
+        <a href="/about.html" class="flex flex-col items-center justify-center w-full h-full text-[#FF7852] transition-colors">
+            <span class="material-symbols-outlined text-[24px] mb-0.5" style="font-variation-settings: 'FILL' 1;">info</span>
+            <span class="text-[10px] font-bold">About</span>
+        </a>
+        <a href="/contact.html" class="flex flex-col items-center justify-center w-full h-full text-[#888888] hover:text-[#e5e5e5] transition-colors">
+            <span class="material-symbols-outlined text-[24px] mb-0.5">mail</span>
+            <span class="text-[10px] font-bold">Contact</span>
+        </a>
+        <a href="/book.html" class="flex flex-col items-center justify-center w-full h-full text-[#888888] hover:text-[#FF7852] transition-colors">
+            <span class="material-symbols-outlined text-[24px] mb-0.5">calendar_month</span>
+            <span class="text-[10px] font-bold">Book</span>
+        </a>
+    </div>
+</div>
+
 <script src="/js/animations.js"></script>
 <script>
-// Premium Mobile menu toggle
-const menuBtn = document.getElementById('mobile-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const menuIcon = document.getElementById('menu-icon');
-
-if (menuBtn && mobileMenu) {
-  menuBtn.addEventListener('click', () => {
-    const isHidden = mobileMenu.classList.contains('hidden');
-    
-    if (isHidden) {
-      // Open
-      document.body.style.overflow = 'hidden'; // prevent scrolling
-      mobileMenu.classList.remove('hidden');
-      // trigger reflow
-      void mobileMenu.offsetWidth;
-      mobileMenu.classList.remove('opacity-0');
-      mobileMenu.classList.add('opacity-100');
-      menuIcon.textContent = 'close';
-      menuIcon.style.transform = 'rotate(90deg)';
-    } else {
-      // Close
-      document.body.style.overflow = '';
-      mobileMenu.classList.remove('opacity-100');
-      mobileMenu.classList.add('opacity-0');
-      menuIcon.textContent = 'menu';
-      menuIcon.style.transform = 'rotate(0deg)';
-      
-      // Wait for fade out
-      setTimeout(() => {
-        mobileMenu.classList.add('hidden');
-      }, 300);
-    }
-  });
-}
+// No mobile menu script needed; using native bottom nav
 </script>
 </body></html>
